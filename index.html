@@ -13,54 +13,57 @@
 </head>
 <body>
 
-  <h1 class="ourpricing">Our Pricing</h1>
-  <div class="timeperiodtoggle">
-    <span class="timeperiod">Annually</span>
-    <label class="switch">
+  <h1 class="pricing-header">Our Pricing</h1>
+  <div class="pricing-container">
+    <span>Annually</span>
+    <label class="pricing-toggle">
       <input type="checkbox" id="toggle" value=unchecked>
-      <span class="slider round"></span>
+      <span class="switch"></span>
     </label>
-    <span class="timeperiod">Monthly</span>
+    <span class="pricing-subheader">Monthly</span>
   </div>
 
-  <div class="option" id="basic">
-    <p class="title">Basic</p>
-    <p class="price"><span class="currency">&dollar;</span><span id="basicprice">199.99</span></p>
-    <ul class="info">
-      <li>500 GB Storage</li>
-      <li>2 Users Allowed</li>
-      <li>Send up to 3 GB</li>
-    </ul>
-    <a class="button" href="#">Learn More</a>
+  <div class="card-container">
+    <div class="card" id="basic">
+      <p class="title">Basic</p>
+      <p class="price"><span class="currency">&dollar;</span><span id="basicprice">199.99</span></p>
+      <ul class="info">
+        <li>500 GB Storage</li>
+        <li>2 Users Allowed</li>
+        <li>Send up to 3 GB</li>
+      </ul>
+      <a class="button" href="#">Learn More</a>
+    </div>
+  
+    <div class="card professional" id="professional">
+      <p class="title">Professional</p>
+      <p class="price"><span class="currency">&dollar;</span><span id="professionalprice">124.99</span></p>
+      <ul class="info">
+        <li>1 TB Storage</li>
+        <li>5 Users Allowed</li>
+        <li>Send up to 10 GB</li>
+      </ul>
+      <a class="button" href="#">Learn More</a>
+    </div>
+  
+    <div class="card" id="master">
+      <p class="title">Master</p>
+      <p class="price"><span class="currency">&dollar;</span><span id="masterprice">399.99</span></p>
+      <ul class="info">
+        <li>2 TB Storage</li>
+        <li>10 Users Allowed</li>
+        <li>Send up to 20 GB</li>
+      </ul>
+      <a class="button" href="#">Learn More</a>
+    </div>
   </div>
 
-  <div class="option" id="professional">
-    <p class="title">Professional</p>
-    <p class="price"><span class="currency">&dollar;</span><span id="professionalprice">124.99</span></p>
-    <ul class="info">
-      <li>1 TB Storage</li>
-      <li>5 Users Allowed</li>
-      <li>Send up to 10 GB</li>
-    </ul>
-    <a class="button" href="#">Learn More</a>
-  </div>
-
-  <div class="option" id="master">
-    <p class="title">Master</p>
-    <p class="price"><span class="currency">&dollar;</span><span id="masterprice">399.99</span></p>
-    <ul class="info">
-      <li>2 TB Storage</li>
-      <li>10 Users Allowed</li>
-      <li>Send up to 20 GB</li>
-    </ul>
-    <a class="button" href="#">Learn More</a>
-  </div>
-
+    
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/nataliepina" target="new">Natalie Pina</a>.
   </div>
-
+  
   <!-- Run script after all element have loaded -->
   <script src="toggle.js"></script>
 
