@@ -50,6 +50,10 @@ body {
   padding: 0;
 }
 
+.card-info, li {
+  padding: 6px 0;
+}
+
 
 #currency {
   font-size: 25px;
@@ -86,6 +90,13 @@ hr {
 }
 
 .button:hover {
+  color: hsl(232, 13%, 33%);
+  background-image: none;
+  background-color: #fff;
+  border: 1px solid hsl(234, 14%, 74%);
+}
+
+button, .button-inverted {
   color: hsl(232, 13%, 33%);
   background-image: none;
   background-color: #fff;
